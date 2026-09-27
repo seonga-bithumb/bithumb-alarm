@@ -97,7 +97,7 @@ for coin, ticker in result["data"].items():
         signals.append((volume_ratio, coin, price, today_ma5, today_ma25))
 
 signals.sort(reverse=True)
-
+print(f"조건 일치 종목 수: {len(signals)}", flush=True)
 if signals:
     lines = [
         "🚨 빗썸 일봉 장중 신호",
