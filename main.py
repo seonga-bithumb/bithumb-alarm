@@ -92,7 +92,7 @@ for coin, ticker in result["data"].items():
     if (
         yesterday_ma5 <= yesterday_ma25
         and today_ma5 > today_ma25
-        and volume_ratio >= 3
+        
     ):
         signals.append((volume_ratio, coin, price, today_ma5, today_ma25))
 
